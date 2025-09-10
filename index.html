@@ -104,18 +104,19 @@ src="https://www.facebook.com/tr?id=3227590830872646&ev=PageView&noscript=1"
             }
 
 .info-text {
-    position: absolute;
-    top: 83%; /* un poco más arriba que el botón */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 350px;
+    position: relative;
+    z-index: 2; /* asegura que quede arriba del fondo */
     text-align: center;
     font-size: 16px;
+    font-weight: 600;
     font-family: 'Montserrat', sans-serif;
-    color: white;
-    line-height: 1.4;
-    margin-bottom: 10px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.4); /* le da contraste sobre la imagen */
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
 }
             
         }
